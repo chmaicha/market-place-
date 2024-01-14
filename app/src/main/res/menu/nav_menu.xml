@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_market"
+            android:icon="@drawable/nav_home"
+            android:title="My Market" />
+        <item
+            android:id="@+id/nav_my_products"
+            android:icon="@drawable/nav_home"
+            android:title="My Products" />
+        <item
+            android:id="@+id/nav_add_product"
+            android:icon="@drawable/nav_home"
+            android:title="Add Product" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/cat_music"
+            android:title="Categories" />
+        <item
+            android:id="@+id/nav_markets"
+            android:icon="@drawable/cat_car"
+            android:title="Markets" />
+
+
+    </group>
+
+    <item android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/cat_music"
+                android:title="Login" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/cat_music"
+                android:title="Logout" />
+
+        </menu>
+    </item>
+
+</menu>

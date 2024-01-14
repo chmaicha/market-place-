@@ -1,0 +1,60 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyMarketFragment">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextImageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Image URL"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextImageUrl"
+        android:layout_marginTop="16dp"
+        android:text="Your Market"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonSaveMarket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/textViewTitle"
+
+        android:background="@color/yellow"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="5dp"
+        android:text="Save" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSaveMarket"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/wave"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

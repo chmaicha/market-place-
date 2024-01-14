@@ -1,0 +1,52 @@
+<!-- activity_payment.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Activity"
+        android:textSize="24sp"
+        android:textColor="@color/blue"/>
+
+    <EditText
+        android:id="@+id/editTextCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextExpirationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCardNumber"
+        android:layout_marginTop="8dp"
+        android:hint="Expiration Date (MM/YY)"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextCVV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextExpirationDate"
+        android:layout_marginTop="8dp"
+        android:hint="CVV"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/buttonMakePayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCVV"
+        android:layout_marginTop="16dp"
+        android:text="Make Payment"
+        android:background="@color/yellow"
+        android:textColor="@color/white"/>
+</RelativeLayout>

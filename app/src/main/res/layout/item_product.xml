@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewProduct"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        />
+
+    <TextView
+        android:id="@+id/textViewProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewProductName"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textViewProductCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewProductPrice"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/buttonBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewProductCategory"
+        android:layout_marginTop="8dp"
+        android:background="@color/yellow"
+        android:textColor="@color/white"
+        android:text="Buy"/>
+
+</RelativeLayout>

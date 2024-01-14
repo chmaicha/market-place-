@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductFragment">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextImageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Image URL"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextImageUrl"
+        android:layout_marginTop="16dp"
+        android:hint="Price"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Spinner for selecting category -->
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPrice"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/category_array" />
+
+    <Button
+        android:id="@+id/buttonAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCategory"
+        android:layout_marginTop="16dp"
+        android:background="@color/yellow"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="5dp"
+        android:text="Add" />
+
+</RelativeLayout>
